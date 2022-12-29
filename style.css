@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito:wght@200;400&family=Open+Sans:wght@300&family=Roboto&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/*------------------HEADER------------------*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    background-color: #393A28; 
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+    font-size: 50px;
+    margin: 10px;
+    color: black;
+    animation: jackInTheBox;
+    animation-duration: 3s;
+   
+}
+
+header p {
+    margin-left: 12%;
+}
+
+.nav a {
+    font-size: 35px;
+    margin: 10px;
+    color: black;
+}
+
+.nav a:hover {
+    color: #2596be;
+    border-bottom: 2px solid black;
+    transition: 0.2s ease;
+}
+
+/*------------------HEADER------------------*/
+/*------------------MAIN------------------*/
+main {
+    background-size: cover;
+}
+
+.sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #82715F;
+    font-family: 'Nunito', sans-serif;
+}
+
+.foto1 {
+  margin: 5% 0 5% 5%;
+  position: relative;
+}
+
+.foto2 {
+    max-width: 350px;
+    margin-right: 6%;
+    position: relative;
+}
+
+.leg1 a {
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    bottom: 45%;
+    left: 22%;
+}
+
+.leg2 a {
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    bottom: 102%;
+}
+
+.leg1 a:hover {
+    color: #2596be;
+    border-bottom: 2px solid black;
+} 
+
+.leg2 a:hover {
+    color: #2596be;
+    border-bottom: 2px solid black;
+} 
+
+.confira {
+    font-family: 'Nunito', sans-serif;
+    height: 10px;
+    text-align: center;
+    font-size: 40px;
+   
+}
+
+.sec2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    font-family: 'sevillana', sans-serif;
+    align-items: center;
+    font-size: 30px;
+    background-color: #82715F;
+}
+
+.mini1 {
+    padding: 5%;
+}
+
+.sec2 > div:nth-child(n + 2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 500px;  
+}
+
+.sec2 a {
+    color: black;
+    font-size: 19px;
+}
+
+.sec2 > div:nth-child(n + 2) a {
+    color: black;
+    font-size: 19px;
+    margin-left: 16px;
+}
+
+.sec2 a:hover {
+    color: #2596be;
+    font-size: 40px;
+    
+    transition: 0.1s ease;
+
+}
+
+.seemore {
+    font-family: 'Nunito', sans-serif;
+    height: 90px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.seemore a {
+    color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px #2596be;
+    padding: px 10px 5px 10px;
+    background-color: #82715F;
+
+}
+
+.seemore a:hover {
+    background-color: #82715fb6;
+} 
+
+.sec3 {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 40px;
+    padding-left: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imagens/festajunina.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sec3 p {
+    margin: 0 0 60px 60px;
+    color: black;
+}
+
+/*------------------MAIN------------------*/
+/*------------------FOOTER------------------*/
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #272B1D;
+    margin-top: 2%;
+    max-width: 100%;
+    height: 80px;
+    padding-top: 2%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.insta a {
+    font-size: 26px;
+    color: #393A28;
+    margin-right: 100px;
+}
+
+.rodape p {
+    color: #272B1D;
+    font-size: 15px;
+}
+
+.rodape p a {
+    color: #272B1D;
+    font-size: 15px;
+}
+
+.rodape  a:hover {
+    color: #2c1e10cb;
+}
+
+/*------------------FOOTER------------------*/
+/*------------------CATÁLOGO------------------*/
+.body2 {
+    background-color: #82715F; 
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    padding: 4% 15% 4% 15%;
+    border-top: 1px solid black;
+}
+
+.catalogo p {
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.catalogo div {
+    padding: 5%;
+}
+
+.catalogo div:hover {
+    background-color: #A58169;
+}
+
+
+/*------------------CATÁLOGO------------------*/
+/*------------------RESPONSIVE------------------*/
+@media (max-width: 900px) {
+    header {
+        min-height: 300px;
+    }
+    .leg1 a {
+        font-size: 20px;
+    }
+    .leg2 a{
+        font-size: 20px;
+        bottom: 0;
+    }
+    .foto1, .foto2 {
+        margin: auto;
+        padding-bottom: 6%;
+    }
+    .confira {
+        height: auto;
+        font-size: 30px
+    }
+    
+    .sec2, .mini2, .mini3, .mini4, .mini5 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 5%;
+        
+    }
+    .sec2 .mini1 {
+        display: block;
+        grid-row: auto;
+        margin: auto;
+        padding: 0;
+    }
+    .sec2 > div:nth-child(n + 2){
+        display: block;
+    }
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+    .catalogo {
+        display: block;
+    }
+}
+/*------------------RESPONSIVE------------------*/
